@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Food Processing Plant Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Food Processing Plant Dashboard! This dashboard provides comprehensive insights into the operations and performance of our food processing plant. Utilizing data extracted from an Excel sheet and presented in the form of interactive charts, this dashboard offers valuable information for monitoring and analyzing various aspects of the plant's activities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Data Fetching:** The dashboard fetches data from an Excel sheet and converts it into a JSON file named `data.json`.
+- **Chart Visualization:** Data from `data.json` is presented through charts, allowing users to visualize metrics such as daily packed orders, order usage, customer connections, and revenue generated.
+- **Ant Design System:** The dashboard is built using the Ant Design system, providing a sleek and user-friendly interface.
+- **Amplify Deployment:** Deployed on AWS Amplify, the dashboard ensures reliable and scalable hosting.
+- **Interactive Components:** Hover over data points to view detailed information, including trends and percentages.
 
-### `npm start`
+## Navigation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Sidebar:** Located on the left, the sidebar enables easy navigation between different sections: Dashboard, Usage, Monthly Analysis, and Resource Analysis.
+- **Email and Notification:** The top-right corner features the email and notification section, allowing users to stay updated with the latest information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Sections
 
-### `npm test`
+### Dashboard
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Provides insights into key metrics such as daily packed orders, order usage, customer connections, and revenue generated for the financial year.
 
-### `npm run build`
+### Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Presents a table detailing resource consumption, offering a comprehensive overview of resource utilization.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Monthly Analysis
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Allows users to navigate through different months and choose from line, pie, or bar graphs for visualization. Hover over data points to view trends and percentages.
 
-### `npm run eject`
+### Resource Analysis
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Enables analysis of monthly consumption patterns for specific resources. Select the resource to visualize the chart and explore trends.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To use the dashboard:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Optionally, install Vite for a better development experience.
 
-## Learn More
+## Explore and Analyze
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Explore our Food Processing Plant Dashboard to gain valuable insights into operations and performance, empowering informed decision-making and optimization of resources.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to enhance this readme with any additional details or instructions as needed!
