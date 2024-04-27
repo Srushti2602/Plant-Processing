@@ -61,11 +61,11 @@ function Dashboard() {
   }, []);
 
   return (
-    <Row gutter={[16, 16]}>
+    <Row gutter={[20, 20]}>
       <Col span={18}>
         <Space direction="vertical" style={{ width: '100%' }}>
           <Typography.Title level={4}>Dashboard</Typography.Title>
-          <Space wrap size={20} direction="horizontal">
+          <Space wrap size={60} direction="horizontal">
             <DashboardCard
               icon={<ShoppingCartOutlined style={{ color: "green" }} />}
               title={"Orders"}
@@ -87,16 +87,16 @@ function Dashboard() {
               value={revenue}
             />
           </Space>
-          <Card style={{ width: '90%', margin: '0 auto', marginTop: 16 }}>
+          <Card style={{ width: '90%', margin: '16px auto 0px', marginTop: 16 }}>
             <Doughnut data={consumptionData} options={{ maintainAspectRatio: false }} />
           </Card>
-          <Card style={{ marginTop: 16 }}>
+          <Card style={{ width: '90%', margin: '16px auto 0px', marginTop: 16 }}>
             <Typography.Text>The donut chart in this context represents the total utility consumption for the entire year in a food processing plant. Each segment of the donut chart corresponds to a different utility, such as water consumption, natural gas consumption, grid electricity consumption, etc. The size of each segment represents the proportion of that utility's consumption relative to the total consumption for the year.
 
 For example, if the water consumption segment occupies a larger portion of the donut chart compared to other segments, it indicates that water consumption contributes a significant portion to the total utility consumption for the year. Conversely, if the segment for natural gas consumption is relatively small, it suggests that natural gas consumption contributes less to the total consumption compared to other utilities.
 
 Overall, the donut chart provides a visual representation of how different utilities contribute to the overall consumption pattern, allowing stakeholders to identify which utilities have the most significant impact and potentially prioritize cost-saving strategies or resource optimization efforts accordingly.</Typography.Text>
-            <br />
+            
             <Typography.Text><p>Dark Blue: Represents water consumption.</p>
   <p>Dark Brown: Represents natural gas consumption.</p>
   <p>Red: Represents grid electricity consumption.</p>

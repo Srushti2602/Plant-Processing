@@ -5,7 +5,7 @@ function AppHeader() {
   return (
     <div className="AppHeader">
       <Space>
-        <Image width={60} src="images/factory.webp" />
+        <Image width={80} src="images/f2.jpg" />
         <Typography.Title className="titleStyle">Food Processing Dashboard</Typography.Title>
       </Space>
       <Space>

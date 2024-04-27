@@ -60,8 +60,26 @@ function Monthly() {
       title: {
         display: true,
         text: `${selectedMonth || ''} Data`,
-      }
-    }
+      },
+      tooltip: {
+        callbacks: {
+          label: (context) => {
+            if (chartType === 'pie') {
+              return `${context.label}: ${context.parsed.y}`;
+            } else {
+              const label = context.dataset.label || '';
+              const value = context.parsed.y;
+              const difference = context.dataIndex !== 0 ? value - context.dataset.data[context.dataIndex - 1] : 0;
+              const sign = difference >= 0 ? '+' : '-';
+              const absDifference = Math.abs(difference).toFixed(2);
+              const diffText = context.dataIndex !== 0 ? `${sign}${absDifference}` : '';
+              const trendText = context.dataIndex !== 0 ? `${sign === '+' ? 'Up' : 'Down'}: ${diffText}` : '';
+              return `${label}: ${value}\n${trendText}`;
+            }
+          },
+        },
+      },
+    },
   };
 
   const pieOptions = {
