@@ -1,6 +1,6 @@
 # Food Processing Plant Dashboard
 
-Welcome to the Food Processing Plant Dashboard! This dashboard provides comprehensive insights into the operations and performance of our food processing plant. Utilizing data extracted from an Excel sheet and presented in the form of interactive charts, this dashboard offers valuable information for monitoring and analyzing various aspects of the plant's activities.
+Welcome to the Food Processing Plant Dashboard! This dashboard provides comprehensive insights into the operations and performance of our food processing plant. Utilizing data extracted from an Excel sheet and presented in the form of interactive charts, this dashboard offers valuable information for monitoring and analyzing various aspects of the plant's activities. Locally hosted on port 3000 or deployed on Amplify AWS :  https://main.d3klpo10jp4gxn.amplifyapp.com/ 
 
 ## Features
 
